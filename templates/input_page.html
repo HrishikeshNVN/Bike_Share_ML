@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </header>
+    
+    <div class="w-full h-full bg-no-repeat bg-cover pb-80"
+            style="background-image: url(https://cdn.pixabay.com/photo/2019/06/01/23/54/bicycles-4245347__340.jpg);">
+        <div class="rounded-t-xl overflow-hidden pt-20">   
+            <div class="flex items-center justify-around ">
+                <div class="rounded-md bg-gray-100 bg-opacity-50 box-content h-300 w-300 p-12 border-8 border-gray-300 border-opacity-50">
+                    <form class="grid grid-cols-3 gap-6" action="/predict" method="POST">
+                        <div></div>
+                        <div class="col-start-2 col-end-2"><h1 class="sm:text-2xl font-bold font-medium title-font mb-4 text-gray-900 ">Fill the fuel...</h1></div>
+                        <div></div>
+                        <div class="col-auto">
+                            <label for="exampleFormControlInput1" class="form-label">TEMP</label>
+                            <input type="number" name="temp" class="form-control border-2 border-gray-300" id="exampleFormControlInput1" placeholder="In celcius">
+                        </div>
+                    
+                        <div class="col-auto">
+                            <label for="exampleFormControlInput1" class="form-label">FEELING TEMP</label>
+                            <input type="number" name="atemp" class="form-control border-2 border-gray-300" id="exampleFormControlInput1" placeholder="What you feels like" >
+                        </div>
+        
+        
+               
+                       
+                        <div class="col-auto">
+                            <label for="exampleFormControlInput1" class="form-label">SEASON</label>
+                            <select class="form-control border-2 border-gray-300" name="season" aria-label="Default select example" >
+                                <option selected>select status</option>
+                                <option value="1">Winter</option>
+                                <option value="2">Spring</option>
+                                <option value="3">Summer</option>
+                                <option value="4">Fall</option>
+                            </select>
+                        </div>
+            
+            
+        
+                        <div class="col-auto ">
+                            <label for="exampleFormControlInput1" class="form-label">WINDSPEED</label>
+                            <input type="number" name="windspeed" class="form-control border-2 border-gray-300" id="exampleFormControlInput1" placeholder="speed of wind">
+                        </div>
+                        <div class="col-auto">
+                            <label for="exampleFormControlInput1" class="form-label">HUMIDITY</label>
+                            <input type="number" name="hum" class="form-control border-2 border-gray-300" id="exampleFormControlInput1" >
+                        </div>
+                        <div class="col-auto">
+                            <label for="exampleFormControlInput1" class="form-label">WEATHER</label>
+                            <select class="form-control border-2 border-gray-300" name="weathersit" aria-label="Default select example" >
+                                <option selected>select status</option>
+                                <option value="1">Clear/Few clouds</option>
+                                <option value="2">Mist/BrokenCloudy</option>
+                                <option value="3">Light Snow</option>
+                                <option value="4">Heavy Rain/Ice Pallets</option>
+                            </select>
+                        </div>
+                        
+                        
+                        
+                      
+                        <div class="col-auto">
+                            <label for="exampleFormControlInput1" class="form-label">HOLIDAY</label>
+                            <select class="placeholder-gray-300" name="holiday" aria-label="Default select example" placeholder="Select YES/NO">
+                                <option selected>Select YES/NO</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                        <div class="col-auto ">
+                            <label for="exampleFormControlInput1" class="form-label">DATE</label>
+                            <input type="date" name="dteday" class="form-control border-2 border-gray-300" id="exampleFormControlInput1" placeholder="speed a date" min="2020-01-01" max="2021-12-31">
+                        </div>
+                        <div></div>
+                        <div class="col-start-2 col-end-2">
+                            <div class="p-2 w-full h-full">
+                                <button type="submit" class="flex mx-auto text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" formaction="/predict" name="submit" value="PREDICT">PREDICT DEMAND</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    <div>
+</html>

@@ -1,0 +1,3 @@
+clientid: JKnSZtdNaTzZnheBJnUvWeXF
+client secret: k.28ghFcfhf0mn+-PXEz5YJWK2dZB-+QaqLTs2OyOKkR,NF5p-XtPlRXY0zrJAdy-8+4JDyFY.h7+A_OtAqIsZNZvulM5WNBAv9.S6NtxXXoWzUlHQB7Pm99d10k0US.
+token: AstraCS:JKnSZtdNaTzZnheBJnUvWeXF:4d27a104aee008346f20491beb3b9f2d2a8748fd83f13096d3b01448fd6a9854
